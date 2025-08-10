@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paradise - Travel Destination</title>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Paradise Island</h1>
+        <p>Discover your dream getaway — sunny beaches, crystal-clear waters, and endless adventures!</p>
+    </header>
+
+    <section>
+        <h2>Top Attractions</h2>
+        <ul>
+            <li>Golden Sands Beach</li>
+            <li>Sunset Cliff Viewpoint</li>
+            <li>Blue Lagoon Diving Spot</li>
+            <li>Old Town Cultural Market</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Travel Packages</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Duration</th>
+                    <th>Price (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beach Lover's Retreat</td>
+                    <td>3 Days</td>
+                    <td>$499</td>
+                </tr>
+                <tr>
+                    <td>Adventure Explorer</td>
+                    <td>5 Days</td>
+                    <td>$899</td>
+                </tr>
+                <tr>
+                    <td>Luxury All-Inclusive</td>
+                    <td>7 Days</td>
+                    <td>$1499</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Destination Highlights</h2>
+        <figure>
+            <img src="https://via.placeholder.com/400x250" alt="Beach view">
+            <figcaption>Golden Sands Beach - Paradise Island</figcaption>
+        </figure>
+        <figure>
+            <video controls width="400">
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+            <figcaption>Watch: Highlights of Paradise Island</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Book Your Trip</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="[+][0-9]{10,15}" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Details</legend>
+                <label for="package">Select Package:</label>
+                <select id="package" name="package" required>
+                    <option value="">--Choose a package--</option>
+                    <option value="beach">Beach Lover's Retreat</option>
+                    <option value="adventure">Adventure Explorer</option>
+                    <option value="luxury">Luxury All-Inclusive</option>
+                </select><br><br>
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label>Extras:</label><br>
+                <input type="checkbox" name="extras" value="snorkeling"> Snorkeling Tour<br>
+                <input type="checkbox" name="extras" value="citytour"> City Tour<br>
+                <input type="checkbox" name="extras" value="spa"> Spa Package<br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" pattern="[0-9]{13,16}" required><br><br>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" name="expiry" required><br><br>
+
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" name="cvv" pattern="[0-9]{3}" required><br><br>
+            </fieldset>
+
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Clear Form">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore Paradise Island. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
